@@ -124,7 +124,6 @@ public class Heap {
     	}
     	System.out.println(prt);
     	*/
-    	asd
         for (int i = 1; i <= size / 2; i++) { 
         	String str = "";
         	if (2 * i + 1 <= size) str += " PARENT: " + Heap[i]; 
