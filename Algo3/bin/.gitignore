@@ -1,5 +1,13 @@
-/1_input.txt
-/Heap.class
+/Prob1$Edge.class
+/Prob1$Job.class
+/Prob1$Vertex.class
+/Edge.class
 /Job.class
-/Main.class
-/Prob1.class
+/Prob1$1.class
+/Prob1$2.class
+/Prob1$3.class
+/Vertex.class
+/Prob2.class
+/Prob2$1.class
+/Prob2$Edge.class
+/Prob2$UnionFind.class
