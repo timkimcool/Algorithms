@@ -9,6 +9,14 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class Prob1 {
+	
+	public static void main(String[] args) {
+		Prob1 prob1 = new Prob1();
+		System.out.println("Part 1: " + prob1.getPartASum(true));
+		System.out.println("Part 2: " + prob1.getPartASum(false));
+		System.out.println("Part 3: " + prob1.getPartBSum());
+	}
+	
 	PriorityQueue<Job> heapPart1 = new PriorityQueue<>(new Comparator<Job>() {
 	    @Override
 	    public int compare(Job j1, Job j2) {
@@ -161,13 +169,6 @@ public class Prob1 {
 		public String toString() {
 			return this.v1.value + " - " + this.v2.value + "(" + this.weight + ")";
 		}
-	}
-	
-	public static void main(String[] args) {
-		Prob1 prob1 = new Prob1();
-		System.out.println("Part 1: " + prob1.getPartASum(true));
-		System.out.println("Part 2: " + prob1.getPartASum(false));
-		System.out.println("Part 3: " + prob1.getPartBSum());
 	}
 }
 

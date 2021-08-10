@@ -10,6 +10,13 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Prob2 {
+	
+	public static void main(String[] args) {
+		Prob2 prob2 = new Prob2();
+		System.out.println("Part 1: " + prob2.getMaxSpacing());
+		System.out.println("Part 2: " + prob2.getNumOfClusters());
+	}
+	
 	List<Edge> edgeList = new ArrayList<>();
 	UnionFind ufA;
 	UnionFind ufB;
@@ -107,12 +114,6 @@ public class Prob2 {
 	
 	private String getNewVertex(String vertex, int index) {
 		return vertex.substring(0, index) + (vertex.charAt(index) == '0' ? "1" : "0") + vertex.substring(index + 1);
-	}
-	
-	public static void main(String[] args) {
-		Prob2 prob2 = new Prob2();
-		System.out.println("Part 1: " + prob2.getMaxSpacing());
-		System.out.println("Part 2: " + prob2.getNumOfClusters());
 	}
 	
 	class Edge {
